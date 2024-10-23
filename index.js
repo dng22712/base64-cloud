@@ -1,5 +1,5 @@
-// Import the necessary libraries
-const express = require('express');
+// Importing the necessary libraries
+import express from 'express'
 const app = express();
 app.use(express.json());  // for parsing application/json
 
@@ -19,6 +19,7 @@ export const base64Encode = async (req, res) => {
 
 // Define the route for the function
 app.post('/functions/base64Encode', base64Encode);
+
 
 // A route to serve the documentation
 app.get('/functions/base64Encode', (req, res) => {
