@@ -17,12 +17,12 @@ export const base64Encode = async (req, res) => {
   res.send({ output });
 };
 
-// Define the route for the function
-app.post('/functions/base64Encode', base64Encode);
+// Defining the route for the function
+app.post('/functions/baseReEncode', base64Encode);
 
 
 // A route to serve the documentation
-app.get('/functions/base64Encode', (req, res) => {
+app.get('/functions/baseReEncode', (req, res) => {
   res.json({
     name: "base64Encode",
     description: "Encode anything to base64",
